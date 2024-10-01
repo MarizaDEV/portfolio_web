@@ -1,3 +1,11 @@
+import { BoxTop, Container } from "./styles/styles";
+
 export const Home = () => {
-  return <h1> Hello aqui! </h1>;
+  return (
+    <>
+      <Container>
+        <BoxTop></BoxTop>
+      </Container>
+    </>
+  );
 };

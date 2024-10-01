@@ -4,18 +4,17 @@ import {
   BrowserRouter,
   Navigate,
 } from "react-router-dom";
-import { Home, PagWebs } from "../pages";
-import { Projetos } from "../pages/Projetos/Projetos";
+import { Home, PagWebs, Projetos } from "../pages";
 
 export const Routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="portfolio-web">
       <Switch>
         <Route path="/home" element={<Home />} />
         <Route path="/projetos" element={<Projetos />} />
         <Route path="/pagwebs" element={<PagWebs />} />
 
-        <Route path="*" element={<Navigate to="/home" />} />
+        <Route path="/*" element={<Navigate to="/home" />} />
       </Switch>
     </BrowserRouter>
   );
