@@ -4,8 +4,14 @@ export const MenuStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
 
   ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 500px;
     list-style-type: none;
     margin: 40px;
@@ -13,10 +19,18 @@ export const MenuStyled = styled.div`
     overflow: hidden;
     background-color: rgba(248, 248, 255, 0.2);
     border-radius: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   }
 
   li {
     float: left;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  li img {
+    width: 35px;
+    height: 35px;
   }
 
   li a {
@@ -25,9 +39,10 @@ export const MenuStyled = styled.div`
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   }
 
   li a:hover {
-    background-color: #111;
+    transform: translateY(-3px);
   }
 `;

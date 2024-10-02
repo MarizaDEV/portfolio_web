@@ -1,4 +1,5 @@
 import { MenuStyled } from "./styles/styles";
+import Logo from "../../../shared/assets/images/logo_light.png";
 
 export const NavBar = () => {
   return (
@@ -7,17 +8,17 @@ export const NavBar = () => {
         <ul>
           <li>
             <a href="#">
-              <img src="./logo-light.png" />
+              <img src={Logo} />
             </a>
           </li>
           <li>
-            <a href="default.asp">Home</a>
+            <a href="portfolio-web/home">Home</a>
           </li>
           <li>
-            <a href="news.asp">Projetos</a>
+            <a href="portfolio-web/home">Projetos</a>
           </li>
           <li>
-            <a href="contact.asp">Páginas Webs</a>
+            <a href="portfolio-web/home">Páginas Webs</a>
           </li>
         </ul>
       </MenuStyled>
