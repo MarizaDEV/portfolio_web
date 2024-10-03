@@ -33,7 +33,7 @@ export const Home = () => {
           </Box3>
           <div>
             <Button
-              label="Secundário"
+              label="Projetos"
               onClick={handleClick}
               variant="secondary"
             />
