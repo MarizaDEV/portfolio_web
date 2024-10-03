@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
+import { Button } from "../../shared/components/Button/Button";
 import { NavBar } from "../../shared/components/Navbar/NavBar";
 import { Box1, Box2, Box3, BoxTop, Container } from "./styles/styles";
 
 export const Home = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/projetos");
+  };
   return (
     <>
       <Container>
@@ -11,15 +18,26 @@ export const Home = () => {
           </Box1>
           <Box2>
             {" "}
-            <h1>WEB DESIGNER & DEVELOPER</h1>
+            <h1>WEB DESIGNER</h1>
+            <h1>& DEVELOPER</h1>
           </Box2>
           <Box3>
-            <h1>
+            <p>
               Meu nome é Mariza, sou desenvolvedora front-end e designer UI e
-              UX. Minhas formações são ensino Técnico em Administração, ensino
+              UX.
+            </p>
+            <p>
+              Minhas formações são ensino Técnico em Administração, ensino
               Técnico em Informática e graduação em Gestão de Cooperativas.
-            </h1>
+            </p>
           </Box3>
+          <div>
+            <Button
+              label="Secundário"
+              onClick={handleClick}
+              variant="secondary"
+            />
+          </div>
         </BoxTop>
       </Container>
     </>
