@@ -23,7 +23,6 @@ export const Box1 = styled.div`
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 100%;
 `;
 
 export const Box2 = styled.div`
@@ -41,12 +40,14 @@ export const Box2 = styled.div`
 export const Box3 = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   height: 100%;
   max-width: 580px;
 
   p {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem;
+    text-align: center;
   }
 `;

@@ -30,14 +30,12 @@ export const Home = () => {
               Minhas formações são ensino Técnico em Administração, ensino
               Técnico em Informática e graduação em Gestão de Cooperativas.
             </p>
-          </Box3>
-          <div>
             <Button
               label="Projetos"
               onClick={handleClick}
               variant="secondary"
             />
-          </div>
+          </Box3>
         </BoxTop>
       </Container>
     </>

@@ -11,7 +11,8 @@ const styles = {
     borderRadius: "5px",
     cursor: "pointer",
     transition: "transform 0.3s, background 0.3s",
-    margin: "30px",
+    margin: "25px 0",
+    boxShadow: "0 10px 25px rgba(0, 0, 0, 0.2)",
   },
   primary: {
     backgroundColor: "#007BFF",
