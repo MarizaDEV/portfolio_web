@@ -33,17 +33,20 @@ export const Box2 = styled.div`
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
   color: #be267a;
-  margin: 30px 0;
-  width: 300px;
   font-size: 15px;
+  flex-direction: column;
+  gap: 5px;
 `;
 
 export const Box3 = styled.div`
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
   height: 100%;
-  color: #ffffff;
-  width: 600px;
-  font-size: 9px;
+  max-width: 580px;
+
+  p {
+    color: #ffffff;
+    font-size: 18px;
+  }
 `;
