@@ -17,7 +17,7 @@ export const MenuStyled = styled.div`
     margin: 40px;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(248, 248, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 40px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   }

@@ -10,7 +10,7 @@ export const BoxTop = styled.div`
   background: url(${banner}) no-repeat right top fixed;
   width: 100%;
   height: 100%;
-  max-height: 520px;
+  max-height: 650px;
   background-size: 100% 100%;
   display: flex;
   align-items: center;
@@ -49,5 +49,28 @@ export const Box3 = styled.div`
     color: #ffffff;
     font-size: 1.125rem;
     text-align: center;
+  }
+`;
+
+export const Box4 = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  color: #be267a;
+  font-size: 15px;
+  width: 100%;
+
+  .barra {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 200px;
+  }
+
+  img {
+    width: 300px;
   }
 `;

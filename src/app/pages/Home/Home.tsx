@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../shared/components/Button/Button";
 import { NavBar } from "../../shared/components/Navbar/NavBar";
-import { Box1, Box2, Box3, BoxTop, Container } from "./styles/styles";
+import { Box1, Box2, Box3, Box4, BoxTop, Container } from "./styles/styles";
+import imgbanner from "../../shared/assets/images/image_banner.png";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -36,6 +37,11 @@ export const Home = () => {
               variant="secondary"
             />
           </Box3>
+          <Box4>
+            <img src={imgbanner} />
+            <h1>Tecnologias & Linguagens</h1>
+            <div className="barra"></div>
+          </Box4>
         </BoxTop>
       </Container>
     </>
