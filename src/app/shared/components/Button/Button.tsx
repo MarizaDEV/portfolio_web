@@ -16,7 +16,6 @@ export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   icon,
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
   const buttonStyles = {
@@ -24,7 +23,6 @@ export const Button: React.FC<ButtonProps> = ({
     ...(variant === "primary" && styles.primary),
     ...(variant === "secondary" && styles.secondary),
     ...(variant === "danger" && styles.danger),
-    ...(isHovered ? styles.hover : {}),
     ...(isActive ? styles.active : {}),
   };
 
@@ -33,8 +31,6 @@ export const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       style={buttonStyles}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       onMouseDown={() => setIsActive(true)}
       onMouseUp={() => setIsActive(false)}
     >
