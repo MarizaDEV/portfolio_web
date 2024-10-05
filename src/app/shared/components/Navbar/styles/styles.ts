@@ -7,7 +7,7 @@ export const MenuStyled = styled.div`
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  margin: 0 20px;
+  width: 100%;
 
   ul {
     display: flex;
@@ -15,7 +15,7 @@ export const MenuStyled = styled.div`
     justify-content: space-around;
     width: 600px;
     list-style-type: none;
-    margin: 40px;
+    margin: 15px;
     padding: 0;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
@@ -45,5 +45,9 @@ export const MenuStyled = styled.div`
 
   li a:hover {
     transform: translateY(-3px);
+  }
+
+  @media (max-width: 350px) {
+    font-size: 0.75rem;
   }
 `;

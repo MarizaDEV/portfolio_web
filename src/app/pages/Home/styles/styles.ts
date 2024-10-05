@@ -96,3 +96,21 @@ export const Box5 = styled.div`
     gap: 30px;
   }
 `;
+
+`@media (max-width: 600px) {
+  background-color: #0056b3;
+  font-size: 14px;
+  width: 120px;
+}`;
+
+`@media (min-width: 601px) and (max-width: 900px) {
+  background-color: #0069d9;
+  font-size: 15px;
+  width: 140px;
+}`;
+
+`@media (min-width: 901px) {
+  background-color: #007BFF;
+  font-size: 16px;
+  width: 150px;
+}`;
