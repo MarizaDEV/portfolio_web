@@ -82,10 +82,17 @@ export const Box5 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
   color: #be267a;
   font-size: 15px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
+
+  .icons-ling {
+    display: flex;
+    gap: 30px;
+  }
 `;

@@ -11,6 +11,7 @@ import {
   Container,
 } from "./styles/styles";
 import imgbanner from "../../shared/assets/images/image_banner.png";
+import { Icones } from "../../shared/components/Icones/Icones";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -54,6 +55,12 @@ export const Home = () => {
           </Box4>{" "}
           <Box5>
             <h1>Tecnologias & Linguagens</h1>
+            <div className="icons-ling">
+              <Icones />
+              <Icones />
+              <Icones />
+              <Icones />
+            </div>
           </Box5>
         </BoxTop>
       </Container>
