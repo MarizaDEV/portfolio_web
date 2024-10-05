@@ -44,7 +44,7 @@ export const Box2 = styled.div`
   font-size: 15px;
   flex-direction: column;
   gap: 5px;
-  margin: 15px 0;
+  margin: 35px 0;
 `;
 
 export const Box3 = styled.div`
@@ -57,7 +57,7 @@ export const Box3 = styled.div`
 
   p {
     color: #ffffff;
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-align: center;
   }
 `;
@@ -83,7 +83,7 @@ export const Box5 = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
   color: #be267a;

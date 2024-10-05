@@ -7,12 +7,13 @@ export const MenuStyled = styled.div`
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
+  margin: 0 20px;
 
   ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 500px;
+    width: 600px;
     list-style-type: none;
     margin: 40px;
     padding: 0;
@@ -29,8 +30,8 @@ export const MenuStyled = styled.div`
   }
 
   li img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
 
   li a {
