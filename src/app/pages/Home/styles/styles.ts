@@ -13,6 +13,12 @@ const slideIn = keyframes`
 export const Container = styled.div`
   background: var(white-theme);
   height: 100vh;
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const BoxTop = styled.div`
@@ -25,13 +31,6 @@ export const BoxTop = styled.div`
   justify-content: center;
   flex-direction: column;
   position: relative;
-`;
-
-export const Box1 = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
 `;
 
 export const Box2 = styled.div`
@@ -60,6 +59,13 @@ export const Box3 = styled.div`
     font-size: 1rem;
     text-align: center;
   }
+
+  @media (max-width: 600px) {
+    p {
+      font-size: 0.9rem;
+      width: 310px;
+    }
+  }
 `;
 
 export const Box4 = styled.div`
@@ -73,6 +79,12 @@ export const Box4 = styled.div`
     bottom: 0;
     z-index: 1;
     animation: ${slideIn} 1s ease forwards;
+  }
+
+  @media (max-width: 970px) {
+    img {
+      display: none;
+    }
   }
 `;
 
@@ -96,21 +108,3 @@ export const Box5 = styled.div`
     gap: 30px;
   }
 `;
-
-`@media (max-width: 600px) {
-  background-color: #0056b3;
-  font-size: 14px;
-  width: 120px;
-}`;
-
-`@media (min-width: 601px) and (max-width: 900px) {
-  background-color: #0069d9;
-  font-size: 15px;
-  width: 140px;
-}`;
-
-`@media (min-width: 901px) {
-  background-color: #007BFF;
-  font-size: 16px;
-  width: 150px;
-}`;

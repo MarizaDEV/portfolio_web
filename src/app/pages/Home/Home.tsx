@@ -1,15 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../shared/components/Button/Button";
 import { NavBar } from "../../shared/components/Navbar/NavBar";
-import {
-  Box1,
-  Box2,
-  Box3,
-  Box4,
-  Box5,
-  BoxTop,
-  Container,
-} from "./styles/styles";
+import { Box2, Box3, Box4, Box5, BoxTop, Container } from "./styles/styles";
 import imgbanner from "../../shared/assets/images/image_banner.png";
 import { Icones } from "../../shared/components/Icones/Icones";
 
@@ -23,11 +15,8 @@ export const Home = () => {
     <>
       <Container>
         <BoxTop>
-          <Box1>
-            <NavBar />
-          </Box1>
+          <NavBar />
           <Box2>
-            {" "}
             <h1>WEB DESIGNER</h1>
             <h1>& DEVELOPER</h1>
           </Box2>
