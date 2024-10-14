@@ -47,7 +47,20 @@ export const MenuStyled = styled.div`
     transform: translateY(-3px);
   }
 
-  @media (max-width: 350px) {
+  .short-text {
+    display: none;
+  }
+
+  @media (max-width: 400px) {
     font-size: 0.75rem;
+  }
+
+  @media (max-width: 600px) {
+    .full-text {
+      display: none;
+    }
+    .short-text {
+      display: inline;
+    }
   }
 `;
