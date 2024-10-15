@@ -4,6 +4,12 @@ import { NavBar } from "../../shared/components/Navbar/NavBar";
 import { Box2, Box3, Box4, Box5, BoxTop, Container } from "./styles/styles";
 import imgbanner from "../../shared/assets/images/image_banner.png";
 import { Icones } from "../../shared/components/Icones/Icones";
+import figma from "../../shared/assets/icones/figma.svg";
+import html from "../../shared/assets/icones/html.svg";
+import css from "../../shared/assets/icones/css.svg";
+import react from "../../shared/assets/icones/react.svg";
+import javascript from "../../shared/assets/icones/javascript.svg";
+import git from "../../shared/assets/icones/git.svg";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -45,10 +51,12 @@ export const Home = () => {
           <Box5>
             <h1>Tecnologias & Linguagens</h1>
             <div className="icons-ling">
-              <Icones />
-              <Icones />
-              <Icones />
-              <Icones />
+              <Icones image={figma} />
+              <Icones image={html} />
+              <Icones image={css} />
+              <Icones image={javascript} />
+              <Icones image={react} />
+              <Icones image={git} />
             </div>
           </Box5>
         </BoxTop>

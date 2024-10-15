@@ -6,4 +6,5 @@ export const Boxicon = styled.div`
   background: white;
   border-radius: 50px;
   box-shadow: 8px 4px 25px rgba(190, 38, 122, 0.8);
+  background: #762c55;
 `;
