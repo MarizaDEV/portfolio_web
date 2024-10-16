@@ -11,6 +11,15 @@ import react from "../../shared/assets/icones/react.svg";
 import javascript from "../../shared/assets/icones/javascript.svg";
 import git from "../../shared/assets/icones/git.svg";
 
+const iconsData = [
+  { image: figma, title: "Figma" },
+  { image: html, title: "HTML5" },
+  { image: css, title: "CSS" },
+  { image: javascript, title: "JavaScript" },
+  { image: react, title: "React" },
+  { image: git, title: "Git" },
+];
+
 export const Home = () => {
   const navigate = useNavigate();
 
@@ -44,19 +53,16 @@ export const Home = () => {
             <img
               className="banner-image"
               src={imgbanner}
-              alt="Banner"
+              alt="Imagem Banner"
               width={"300px"}
             />
           </Box4>{" "}
           <Box5>
             <h1>Tecnologias & Linguagens</h1>
             <div className="icons-ling">
-              <Icones image={figma} />
-              <Icones image={html} />
-              <Icones image={css} />
-              <Icones image={javascript} />
-              <Icones image={react} />
-              <Icones image={git} />
+              {iconsData.map((icon, index) => (
+                <Icones key={index} image={icon.image} title={icon.title} />
+              ))}
             </div>
           </Box5>
         </BoxTop>

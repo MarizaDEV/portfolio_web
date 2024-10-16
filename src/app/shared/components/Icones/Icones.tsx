@@ -1,18 +1,21 @@
 import React from "react";
-import { Boxicon } from "./styles/styles";
+import { Boxicon, IconContainer, Tooltip } from "./styles/styles";
 
 interface IconesProps {
   image: string;
+  title: string;
 }
-
-export const Icones: React.FC<IconesProps> = ({ image }) => {
+export const Icones: React.FC<IconesProps> = ({ image, title }) => {
   return (
-    <Boxicon>
-      <img
-        src={image}
-        alt="Ícone"
-        style={{ width: "100%", height: "100%", padding: "5px" }}
-      />
-    </Boxicon>
+    <IconContainer>
+      <Boxicon>
+        <img
+          src={image}
+          alt={title}
+          style={{ width: "100%", height: "100%", padding: "5px" }}
+        />
+      </Boxicon>
+      <Tooltip>{title}</Tooltip> {/* Para a legenda */}
+    </IconContainer>
   );
 };

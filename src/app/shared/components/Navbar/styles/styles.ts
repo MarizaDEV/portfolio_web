@@ -30,8 +30,8 @@ export const MenuStyled = styled.div`
   }
 
   li img {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 50px;
   }
 
   li a {
