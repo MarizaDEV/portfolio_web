@@ -1,7 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../shared/components/Button/Button";
 import { NavBar } from "../../shared/components/Navbar/NavBar";
-import { Box2, Box3, Box4, Box5, BoxTop, Container } from "./styles/styles";
+import {
+  Box2,
+  Box3,
+  Box4,
+  Box5,
+  BoxCenter,
+  BoxTop,
+  Container,
+} from "./styles/styles";
 import imgbanner from "../../shared/assets/images/image_banner.png";
 import { Icones } from "../../shared/components/Icones/Icones";
 import figma from "../../shared/assets/icones/figma.svg";
@@ -66,6 +74,10 @@ export const Home = () => {
             </div>
           </Box5>
         </BoxTop>
+
+        <BoxCenter>
+          <p>meio aqui</p>
+        </BoxCenter>
       </Container>
     </>
   );
