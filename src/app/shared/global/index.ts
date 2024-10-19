@@ -84,14 +84,15 @@ export const GlobalStyle = styled.createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    border: 1px solid #d9d9d9;
+    border: 1px solid #000000;
     margin-left: 0.938em;
     margin-right: 0.938em;
     border-radius: 3px;
+    background: #000000;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #d1d1d1;
+    background: #161c23;
     border-radius: 3px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
