@@ -30,7 +30,7 @@ const iconsData = [
   { image: git, title: "Git" },
 ];
 
-const cardsData = [{ image: figma, text: "Figma" }];
+const cardsData = [{ image: figma, text: "Floricultura Lua" }];
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -81,6 +81,16 @@ export const Home = () => {
 
         <BoxCenter>
           <BoxStyleCards>
+            <div className="Cards">
+              {cardsData.map((card, index) => (
+                <Cards key={index} image={card.image} text={card.text} />
+              ))}
+            </div>
+            <div className="Cards">
+              {cardsData.map((card, index) => (
+                <Cards key={index} image={card.image} text={card.text} />
+              ))}
+            </div>
             <div className="Cards">
               {cardsData.map((card, index) => (
                 <Cards key={index} image={card.image} text={card.text} />

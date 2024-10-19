@@ -127,6 +127,7 @@ export const BoxStyleCards = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
   padding: 80px;
