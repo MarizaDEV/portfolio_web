@@ -39,3 +39,14 @@ export const Tooltip = styled.div`
   z-index: 1;
   transition: visibility 0.2s ease;
 `;
+
+export const Arrow = styled.button`
+  background: none;
+  border: none;
+  color: #be267a;
+  font-size: 30px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+`;

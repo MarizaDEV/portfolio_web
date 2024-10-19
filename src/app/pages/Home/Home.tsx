@@ -20,6 +20,8 @@ import javascript from "../../shared/assets/icones/javascript.svg";
 import git from "../../shared/assets/icones/git.svg";
 import { Icones } from "../../shared/components/Icones/Icones";
 import { Cards } from "../../shared/components/Cards/Cards";
+import { useState } from "react";
+import { Arrow } from "../../shared/components/Icones/styles/styles";
 
 const iconsData = [
   { image: figma, title: "Figma" },
@@ -38,6 +40,27 @@ export const Home = () => {
   const handleClick = () => {
     navigate("/projetos");
   };
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerPage = 5;
+
+  const handleNext = () => {
+    if (currentIndex + itemsPerPage < iconsData.length) {
+      setCurrentIndex((prevIndex) => prevIndex + itemsPerPage);
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentIndex - itemsPerPage >= 0) {
+      setCurrentIndex((prevIndex) => prevIndex - itemsPerPage);
+    }
+  };
+
+  const displayedIcons = iconsData.slice(
+    currentIndex,
+    currentIndex + itemsPerPage
+  );
+
   return (
     <>
       <Container>
@@ -72,9 +95,18 @@ export const Home = () => {
           <Box5>
             <h1>Tecnologias & Linguagens</h1>
             <div className="icons-ling">
-              {iconsData.map((icon, index) => (
+              <Arrow onClick={handlePrev} disabled={currentIndex === 0}>
+                ←
+              </Arrow>
+              {displayedIcons.map((icon, index) => (
                 <Icones key={index} image={icon.image} title={icon.title} />
               ))}
+              <Arrow
+                onClick={handleNext}
+                disabled={currentIndex + itemsPerPage >= iconsData.length}
+              >
+                →
+              </Arrow>
             </div>
           </Box5>
         </BoxTop>
