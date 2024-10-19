@@ -36,7 +36,9 @@ const iconsData = [
   { image: git, title: "Git" },
 ];
 
-const cardsData = [{ image: figma, text: "Floricultura Lua" }];
+const cardsData = [
+  { image: figma, text: "Floricultura Lua", link: "https://.com" },
+];
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -129,22 +131,42 @@ export const Home = () => {
           <BoxStyleCards>
             <div className="Cards">
               {cardsData.map((card, index) => (
-                <Cards key={index} image={card.image} text={card.text} />
+                <Cards
+                  key={index}
+                  image={card.image}
+                  text={card.text}
+                  link={card.link}
+                />
               ))}
             </div>
             <div className="Cards">
               {cardsData.map((card, index) => (
-                <Cards key={index} image={card.image} text={card.text} />
+                <Cards
+                  key={index}
+                  image={card.image}
+                  text={card.text}
+                  link={card.link}
+                />
               ))}
             </div>
             <div className="Cards">
               {cardsData.map((card, index) => (
-                <Cards key={index} image={card.image} text={card.text} />
+                <Cards
+                  key={index}
+                  image={card.image}
+                  text={card.text}
+                  link={card.link}
+                />
               ))}
             </div>
             <div className="Cards">
               {cardsData.map((card, index) => (
-                <Cards key={index} image={card.image} text={card.text} />
+                <Cards
+                  key={index}
+                  image={card.image}
+                  text={card.text}
+                  link={card.link}
+                />
               ))}
             </div>
           </BoxStyleCards>
