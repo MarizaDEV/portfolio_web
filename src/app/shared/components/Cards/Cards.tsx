@@ -21,8 +21,8 @@ export const Cards: React.FC<CardsProps> = ({ image, text, link }) => {
             </a>
           </BoxImg>
         </BoxStyledImg>
+        <TextCard>{text}</TextCard>
       </BoxCard>
-      <TextCard>{text}</TextCard>
     </Card>
   );
 };

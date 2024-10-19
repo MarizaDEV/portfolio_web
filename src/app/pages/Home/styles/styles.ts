@@ -111,7 +111,7 @@ export const Box5 = styled.div`
 
 export const BoxCenter = styled.div`
   width: 100%;
-  height: 800px;
+  max-height: 800px;
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
   color: #be267a;
