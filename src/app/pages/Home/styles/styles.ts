@@ -112,17 +112,22 @@ export const Box5 = styled.div`
 export const BoxCenter = styled.div`
   width: 100%;
   height: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
   color: #be267a;
   font-size: 15px;
-  position: relative;
   background: linear-gradient(
     180deg,
     rgba(4, 4, 4, 1) 0%,
     rgba(27, 48, 80, 1) 85%
   );
+`;
+
+export const BoxStyleCards = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px;
 `;

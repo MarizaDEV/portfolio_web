@@ -6,21 +6,38 @@ export const Card = styled.div`
 `;
 
 export const BoxCard = styled.div`
-  width: 40px;
-  height: 40px;
-  background: #a3497b;
-  border-radius: 50px;
-  box-shadow: 8px 4px 25px rgba(190, 38, 122, 0.8);
-  transition: transform 0.2s;
+  width: 280px;
+  height: 250px;
+  background: #010911;
+  border-radius: 3px;
+  box-shadow: 15px 4px 25px rgba(4, 4, 4, 1);
   cursor: pointer;
   position: relative;
-
-  &:hover {
-    transform: scale(1.2);
-  }
 `;
 
 export const TextCard = styled.div`
   width: 100%;
   height: 100%;
+`;
+
+export const BoxStyledImg = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const BoxImg = styled.div`
+  width: 200px;
+  height: 170px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;

@@ -7,17 +7,19 @@ import {
   Box4,
   Box5,
   BoxCenter,
+  BoxStyleCards,
   BoxTop,
   Container,
 } from "./styles/styles";
 import imgbanner from "../../shared/assets/images/image_banner.png";
-import { Icones } from "../../shared/components/Icones/Icones";
 import figma from "../../shared/assets/icones/figma.svg";
 import html from "../../shared/assets/icones/html.svg";
 import css from "../../shared/assets/icones/css.svg";
 import react from "../../shared/assets/icones/react.svg";
 import javascript from "../../shared/assets/icones/javascript.svg";
 import git from "../../shared/assets/icones/git.svg";
+import { Icones } from "../../shared/components/Icones/Icones";
+import { Cards } from "../../shared/components/Cards/Cards";
 
 const iconsData = [
   { image: figma, title: "Figma" },
@@ -27,6 +29,8 @@ const iconsData = [
   { image: react, title: "React" },
   { image: git, title: "Git" },
 ];
+
+const cardsData = [{ image: figma, text: "Figma" }];
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -76,7 +80,18 @@ export const Home = () => {
         </BoxTop>
 
         <BoxCenter>
-          <p>meio aqui</p>
+          <BoxStyleCards>
+            <div className="Cards">
+              {cardsData.map((card, index) => (
+                <Cards key={index} image={card.image} text={card.text} />
+              ))}
+            </div>
+            <div className="Cards">
+              {cardsData.map((card, index) => (
+                <Cards key={index} image={card.image} text={card.text} />
+              ))}
+            </div>
+          </BoxStyleCards>
         </BoxCenter>
       </Container>
     </>
