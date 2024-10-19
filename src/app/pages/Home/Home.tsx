@@ -18,6 +18,10 @@ import css from "../../shared/assets/icones/css.svg";
 import react from "../../shared/assets/icones/react.svg";
 import javascript from "../../shared/assets/icones/javascript.svg";
 import git from "../../shared/assets/icones/git.svg";
+
+import setright from "../../shared/assets/icones/setas/setright.png";
+import setleft from "../../shared/assets/icones/setas/setleft.png";
+
 import { Icones } from "../../shared/components/Icones/Icones";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { useState } from "react";
@@ -96,7 +100,12 @@ export const Home = () => {
             <h1>Tecnologias & Linguagens</h1>
             <div className="icons-ling">
               <Arrow onClick={handlePrev} disabled={currentIndex === 0}>
-                ←
+                <img
+                  className="set-image"
+                  src={setleft}
+                  alt="seta esquerda"
+                  width={"25px"}
+                />
               </Arrow>
               {displayedIcons.map((icon, index) => (
                 <Icones key={index} image={icon.image} title={icon.title} />
@@ -105,7 +114,12 @@ export const Home = () => {
                 onClick={handleNext}
                 disabled={currentIndex + itemsPerPage >= iconsData.length}
               >
-                →
+                <img
+                  className="set-image"
+                  src={setright}
+                  alt="seta direita"
+                  width={"25px"}
+                />
               </Arrow>
             </div>
           </Box5>
