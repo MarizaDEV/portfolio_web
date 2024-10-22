@@ -111,7 +111,7 @@ export const Box5 = styled.div`
 
 export const BoxCenter = styled.div`
   width: 100%;
-  max-height: 800px;
+  //height: 100%;
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
   color: #be267a;
@@ -125,10 +125,17 @@ export const BoxCenter = styled.div`
 
 export const BoxStyleCards = styled.div`
   width: 100%;
-  height: 100%;
+  // height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
   padding: 80px;
+`;
+
+export const CarrosselStyle = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 `;
