@@ -31,6 +31,7 @@ export const ArrowButton = styled.button`
   padding: 10px;
   z-index: 1;
   border-radius: 50%;
+  color: #be267a;
   &:hover {
     background: rgba(0, 0, 0, 0.8);
   }
