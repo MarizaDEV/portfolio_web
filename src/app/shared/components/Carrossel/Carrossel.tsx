@@ -10,6 +10,8 @@ import {
 } from "./styles/styles";
 
 import imgbanner from "../../assets/images/banner.png";
+import setright from "../../assets/icones/setas/setright.png";
+import setleft from "../../assets/icones/setas/setleft.png";
 
 const images = [imgbanner, imgbanner, imgbanner];
 
@@ -60,8 +62,12 @@ export const Carrossel = () => {
           <CarouselImage key={index} src={image} alt={`Image ${index + 1}`} />
         ))}
       </CarouselTrack>
-      <PrevButton onClick={handlePrev}>←</PrevButton>
-      <NextButton onClick={handleNext}>→</NextButton>
+      <PrevButton onClick={handlePrev}>
+        <img src={setleft} alt="icon left" width="25px" />
+      </PrevButton>
+      <NextButton onClick={handleNext}>
+        <img src={setright} alt="icon right" width="25px" />
+      </NextButton>
       <IndicatorContainer>
         {images.map((_, index: number) => (
           <Indicator

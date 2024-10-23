@@ -25,14 +25,14 @@ export const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   border: none;
   cursor: pointer;
   padding: 10px;
   z-index: 1;
   border-radius: 50%;
   &:hover {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.8);
   }
 `;
 
