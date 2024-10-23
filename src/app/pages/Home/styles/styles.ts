@@ -138,4 +138,5 @@ export const CarrosselStyle = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  padding: 40px 10px;
 `;

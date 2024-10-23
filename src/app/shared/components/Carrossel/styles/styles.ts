@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
   width: 100%;
-  max-width: 600px;
+  max-width: 620px;
   overflow: hidden;
   position: relative;
   margin: auto;
@@ -16,7 +16,8 @@ export const CarouselTrack = styled.div<{ offset: string }>`
 
 export const CarouselImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   flex-shrink: 0;
 `;
 
@@ -50,7 +51,6 @@ export const IndicatorContainer = styled.div`
 `;
 
 export const Indicator = styled.button<{ active: boolean }>`
-  /* Aceita a propriedade active */
   background: ${(props) => (props.active ? "#be267a" : "#ccc")};
   border: none;
   border-radius: 50%;

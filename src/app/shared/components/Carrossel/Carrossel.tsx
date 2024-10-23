@@ -48,7 +48,7 @@ export const Carrossel = () => {
   useEffect(() => {
     if (intervalId) {
       clearInterval(intervalId);
-      const newIntervalId = setInterval(handleNext, 50000);
+      const newIntervalId = setInterval(handleNext, 10000);
       setIntervalId(newIntervalId);
     }
   }, [currentIndex]); // Reinicia o intervalo quando o índice muda
