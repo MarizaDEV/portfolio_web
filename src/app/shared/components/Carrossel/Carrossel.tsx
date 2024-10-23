@@ -16,6 +16,9 @@ const images = [imgbanner, imgbanner, imgbanner];
 export const Carrossel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsCount = images.length;
+  const [intervalId, setIntervalId] = useState<ReturnType<
+    typeof setInterval
+  > | null>(null);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % itemsCount);
@@ -30,9 +33,25 @@ export const Carrossel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 3000);
-    return () => clearInterval(interval);
+    const startInterval = () => {
+      const id = setInterval(handleNext, 10000);
+      setIntervalId(id);
+    };
+
+    startInterval();
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
   }, []);
+
+  useEffect(() => {
+    if (intervalId) {
+      clearInterval(intervalId);
+      const newIntervalId = setInterval(handleNext, 50000);
+      setIntervalId(newIntervalId);
+    }
+  }, [currentIndex]); // Reinicia o intervalo quando o índice muda
 
   return (
     <CarouselContainer>
