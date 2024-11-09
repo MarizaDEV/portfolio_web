@@ -11,9 +11,6 @@ import {
 
 import imgbanner from "../../assets/images/banner.png";
 
-import setright from "../../shared/assets/icones/setas/setright.png";
-import setleft from "../../shared/assets/icones/setas/setleft.png";
-
 const images = [imgbanner, imgbanner, imgbanner];
 
 export const Carrossel = () => {
@@ -54,7 +51,7 @@ export const Carrossel = () => {
       const newIntervalId = setInterval(handleNext, 50000);
       setIntervalId(newIntervalId);
     }
-  }, [currentIndex]); // Reinicia o intervalo quando o índice muda
+  }, [currentIndex]);
 
   return (
     <CarouselContainer>
