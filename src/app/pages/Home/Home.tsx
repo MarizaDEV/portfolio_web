@@ -28,6 +28,7 @@ import { Cards } from "../../shared/components/Cards/Cards";
 import { useState } from "react";
 import { Arrow } from "../../shared/components/Icones/styles/styles";
 import { Carrossel } from "../../shared/components/Carrossel/Carrossel";
+import { Footer } from "../../shared/components/Footer";
 
 const iconsData = [
   { image: figma, title: "Figma" },
@@ -176,6 +177,7 @@ export const Home = () => {
             <Carrossel />
           </CarrosselStyle>
         </BoxCenter>
+        <Footer />
       </Container>
     </>
   );
