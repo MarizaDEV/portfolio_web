@@ -1,4 +1,11 @@
-import { BoxTop, FooterStyle, Line, LineStyle } from "./styles/styles";
+import {
+  BoxContacts,
+  BoxEnd,
+  BoxTop,
+  FooterStyle,
+  Line,
+  LineStyle,
+} from "./styles/styles";
 
 import logo from "../../assets/images/logo_light.png";
 
@@ -24,6 +31,10 @@ export const Footer = () => {
       <LineStyle>
         <Line></Line>
       </LineStyle>
+      <BoxContacts></BoxContacts>
+      <BoxEnd>
+        <p> &copy; 2024 MARIZA L. SOUZA Todos os direitos reservados.</p>
+      </BoxEnd>
     </FooterStyle>
   );
 };
