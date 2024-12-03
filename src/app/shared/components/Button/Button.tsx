@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styles from "./styles/styles";
 
 interface ButtonProps {
@@ -16,24 +15,15 @@ export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   icon,
 }) => {
-  const [isActive, setIsActive] = useState(false);
-
   const buttonStyles = {
     ...styles.button,
     ...(variant === "primary" && styles.primary),
     ...(variant === "secondary" && styles.secondary),
     ...(variant === "danger" && styles.danger),
-    ...(isActive ? styles.active : {}),
   };
 
   return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      style={buttonStyles}
-      onMouseDown={() => setIsActive(true)}
-      onMouseUp={() => setIsActive(false)}
-    >
+    <button onClick={onClick} disabled={disabled} style={buttonStyles}>
       {icon && <span style={styles.icon}>{icon}</span>}
       {label}
     </button>

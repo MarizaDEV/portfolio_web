@@ -9,7 +9,6 @@ import {
   BoxCenter,
   BoxStyleCards,
   BoxTop,
-  CarrosselStyle,
   Container,
 } from "./styles/styles";
 import imgbanner from "../../shared/assets/images/image_banner.png";
@@ -27,7 +26,6 @@ import { Icones } from "../../shared/components/Icones/Icones";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { useState } from "react";
 import { Arrow } from "../../shared/components/Icones/styles/styles";
-import { Carrossel } from "../../shared/components/Carrossel/Carrossel";
 import { Footer } from "../../shared/components/Footer";
 
 const iconsData = [
@@ -173,9 +171,6 @@ export const Home = () => {
               ))}
             </div>
           </BoxStyleCards>
-          <CarrosselStyle>
-            <Carrossel />
-          </CarrosselStyle>
         </BoxCenter>
         <Footer />
       </Container>

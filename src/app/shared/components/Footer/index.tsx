@@ -8,6 +8,16 @@ import {
 } from "./styles/styles";
 
 import logo from "../../assets/images/logo_light.png";
+import { Icones } from "../Icones/Icones";
+
+import figma from "../../assets/icones/figma.svg";
+
+const iconsContacts = [
+  {
+    image: figma,
+    title: "Figma",
+  },
+];
 
 export const Footer = () => {
   return (
@@ -31,7 +41,11 @@ export const Footer = () => {
       <LineStyle>
         <Line></Line>
       </LineStyle>
-      <BoxContacts></BoxContacts>
+      <BoxContacts>
+        {iconsContacts.map((icon, index) => (
+          <Icones key={index} image={icon.image} title={icon.title} />
+        ))}
+      </BoxContacts>
       <BoxEnd>
         <p> &copy; 2024 MARIZA L. SOUZA Todos os direitos reservados.</p>
       </BoxEnd>

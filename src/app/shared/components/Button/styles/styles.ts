@@ -28,9 +28,6 @@ const styles = {
   icon: {
     marginRight: "8px",
   },
-  active: {
-    transform: "scale(0.95)",
-  },
 };
 
 const animationStyles = `
