@@ -8,12 +8,14 @@ export const BoxImagens = styled.div`
   position: relative;
   padding-bottom: 20px;
   margin: 0 auto;
+  border-radius: 5px;
 
   .banner-image {
     width: 100%;
     height: 300px;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
+    border-radius: 5px;
   }
 
   @media (max-width: 768px) {
@@ -44,6 +46,7 @@ export const ImagensCarrossel = styled.div`
     margin: 0 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    border-radius: 5px;
 
     &:hover {
       transform: scale(1.1);
