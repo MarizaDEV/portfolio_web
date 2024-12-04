@@ -3,15 +3,15 @@ import styled from "styled-components";
 export const BoxImagens = styled.div`
   background: red;
   width: 100%;
-  max-width: 500px;
-  height: 350px;
+  max-width: 620px;
+  height: 420px;
   position: relative;
   padding-bottom: 20px;
   margin: 0 auto;
 
   .banner-image {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
   }
@@ -35,11 +35,11 @@ export const ImagensCarrossel = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  bottom: 8px;
 
   img {
-    width: 100px;
+    width: 130px;
     height: 100px;
     margin: 0 10px;
     cursor: pointer;
