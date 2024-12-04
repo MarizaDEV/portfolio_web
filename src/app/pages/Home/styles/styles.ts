@@ -135,8 +135,7 @@ export const BoxStyleCards = styled.div`
 
 export const CarrosselStyle = styled.div`
   width: 100%;
-  height: 100%;
+  height: 600px;
   display: flex;
   justify-content: center;
-  padding: 60px 10px;
 `;
