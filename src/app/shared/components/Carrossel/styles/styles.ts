@@ -19,16 +19,16 @@ export const BoxImagens = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 250px;
+    height: 350px;
     .banner-image {
-      height: 150px;
+      height: 250px;
     }
   }
 
   @media (max-width: 480px) {
-    height: 200px;
+    height: 270px;
     .banner-image {
-      height: 120px;
+      height: 190px;
     }
   }
 `;
