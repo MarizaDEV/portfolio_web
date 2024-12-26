@@ -9,13 +9,16 @@ import {
 
 import logo from "../../assets/images/logo_light.png";
 
-import figma from "../../assets/icones/figma.svg";
+import Instagram from "../../assets/iconsRedesSociais/instagram.svg";
+import linkedin from "../../assets/iconsRedesSociais/linkedin.svg";
+import git from "../../assets/iconsRedesSociais/git.svg";
+
 import { IconFooter } from "../IconFooter";
 
 const iconsContacts = [
-  {
-    image: figma,
-  },
+  { image: Instagram },
+  { image: linkedin },
+  { image: git },
 ];
 
 export const Footer = () => {
@@ -27,8 +30,8 @@ export const Footer = () => {
             className="banner-image"
             src={logo}
             alt="Imagem Banner"
-            width={"90px"}
-            height={"100px"}
+            width={"110px"}
+            height={"auto"}
           />
         </div>
         <div>
