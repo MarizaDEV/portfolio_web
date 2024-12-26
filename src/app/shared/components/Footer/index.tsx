@@ -8,14 +8,13 @@ import {
 } from "./styles/styles";
 
 import logo from "../../assets/images/logo_light.png";
-import { Icones } from "../Icones/Icones";
 
 import figma from "../../assets/icones/figma.svg";
+import { IconFooter } from "../IconFooter";
 
 const iconsContacts = [
   {
     image: figma,
-    title: "Figma",
   },
 ];
 
@@ -43,7 +42,7 @@ export const Footer = () => {
       </LineStyle>
       <BoxContacts>
         {iconsContacts.map((icon, index) => (
-          <Icones key={index} image={icon.image} title={icon.title} />
+          <IconFooter key={index} image={icon.image} />
         ))}
       </BoxContacts>
       <BoxEnd>
