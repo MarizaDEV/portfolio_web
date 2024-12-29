@@ -1,6 +1,5 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "../../shared/components/Button/Button";
-import { NavBar } from "../../shared/components/Navbar/NavBar";
 import {
   Box2,
   Box3,
@@ -12,29 +11,34 @@ import {
   CarrosselStyle,
   Container,
 } from "./styles/styles";
-import imgbanner from "../../shared/assets/images/image_banner.png";
-import figma from "../../shared/assets/icones/figma.svg";
-import html from "../../shared/assets/icones/html.svg";
-import css from "../../shared/assets/icones/css.svg";
-import react from "../../shared/assets/icones/react.svg";
-import javascript from "../../shared/assets/icones/javascript.svg";
-import git from "../../shared/assets/icones/git.svg";
 
-import setright from "../../shared/assets/icones/setas/setright.png";
-import setleft from "../../shared/assets/icones/setas/setleft.png";
+import {
+  css,
+  figma,
+  git,
+  html,
+  imgbanner,
+  javaScript,
+  react,
+  setleft,
+  setright,
+} from "../../shared/assets";
 
-import { Icones } from "../../shared/components/Icones/Icones";
-import { Cards } from "../../shared/components/Cards/Cards";
-import { useState } from "react";
-import { Arrow } from "../../shared/components/Icones/styles/styles";
-import { Footer } from "../../shared/components/Footer";
-import { Carrossel } from "../../shared/components/Carrossel";
+import {
+  Arrow,
+  Button,
+  Cards,
+  Carrossel,
+  Footer,
+  Icones,
+  NavBar,
+} from "../../shared/components";
 
 const iconsData = [
   { image: figma, title: "Figma" },
   { image: html, title: "HTML5" },
   { image: css, title: "CSS" },
-  { image: javascript, title: "JavaScript" },
+  { image: javaScript, title: "JavaScript" },
   { image: react, title: "React" },
   { image: git, title: "Git" },
 ];

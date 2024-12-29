@@ -30,8 +30,8 @@ export const Footer = () => {
             className="banner-image"
             src={logo}
             alt="Imagem Banner"
-            width={"110px"}
-            height={"auto"}
+            width={"80px"}
+            height={"80px"}
           />
         </div>
         <div>
