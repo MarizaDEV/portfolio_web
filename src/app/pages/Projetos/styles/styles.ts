@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   background: var(white-theme);
   height: 100vh;
+  font-family: "Orbitron", sans-serif;
 `;
 
 export const BoxTopProjects = styled.div`
@@ -22,20 +23,20 @@ export const BoxImagesNew = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 50px 0;
   gap: 20px;
   flex-wrap: wrap;
 
   img {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 320px;
     box-shadow: 15px 4px 25px rgba(4, 4, 4, 1);
     border-radius: 5px;
   }
 
   .Image-2 {
-    width: 200px;
-    height: 350px;
+    width: 300px;
+    height: 380px;
   }
 
   @media (min-width: 510px) and (max-width: 650px) {
@@ -67,5 +68,21 @@ export const BoxImagesNew = styled.div`
       width: 80px;
       height: 180px;
     }
+  }
+`;
+
+export const BoxProjetos = styled.div`
+  background: #000000;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+
+  H1 {
+    color: #be267a;
   }
 `;

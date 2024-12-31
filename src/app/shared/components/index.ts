@@ -5,3 +5,4 @@ export { Footer } from "../../shared/components/Footer";
 export { Carrossel } from "../../shared/components/Carrossel";
 export { Button } from "../../shared/components/Button/Button";
 export { NavBar } from "../../shared/components/Navbar/NavBar";
+export { ImagesList } from "../../shared/components/ImageList/index";

@@ -1,6 +1,11 @@
 import { imageNew1 } from "../../shared/assets";
 import { NavBar } from "../../shared/components";
-import { BoxImagesNew, BoxTopProjects, Container } from "./styles/styles";
+import {
+  BoxImagesNew,
+  BoxProjetos,
+  BoxTopProjects,
+  Container,
+} from "./styles/styles";
 
 export const Projetos = () => {
   return (
@@ -26,6 +31,9 @@ export const Projetos = () => {
             />
           </BoxImagesNew>
         </BoxTopProjects>
+        <BoxProjetos>
+          <h1>PROJETOS</h1>
+        </BoxProjetos>
       </Container>
     </>
   );
