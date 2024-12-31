@@ -7,3 +7,4 @@ export { default as git } from "../assets/icones/git.svg";
 export { default as imgbanner } from "../assets/images/image_banner.png";
 export { default as setright } from "../assets/icones/setas/setright.png";
 export { default as setleft } from "../assets/icones/setas/setleft.png";
+export { default as imageNew1 } from "../assets/images/Projetos/Group 229.png";

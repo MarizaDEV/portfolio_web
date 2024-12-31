@@ -1,5 +1,5 @@
-export * from "./Home/Home";
+export * from "./Home";
 
-export * from "./PagWebs/PagWebs";
+export * from "./PagWebs";
 
-export * from "./Projetos/Projetos";
+export * from "./Projetos";
