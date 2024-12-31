@@ -107,6 +107,21 @@ export const Box5 = styled.div`
     display: flex;
     gap: 30px;
   }
+
+  img {
+    width: 35px;
+  }
+
+  @media (max-width: 970px) {
+    .icons-ling {
+      gap: 10px;
+    }
+  }
+  @media (max-width: 335px) {
+    img {
+      width: 20px;
+    }
+  }
 `;
 
 export const BoxCenter = styled.div`
@@ -138,4 +153,8 @@ export const CarrosselStyle = styled.div`
   height: 500px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 970px) {
+    height: 300px;
+  }
 `;

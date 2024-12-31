@@ -109,12 +109,7 @@ export const Home = () => {
             <h1>Tecnologias & Linguagens</h1>
             <div className="icons-ling">
               <Arrow onClick={handlePrev} disabled={currentIndex === 0}>
-                <img
-                  className="set-image"
-                  src={setleft}
-                  alt="seta esquerda"
-                  width={"25px"}
-                />
+                <img className="set-image" src={setleft} alt="seta esquerda" />
               </Arrow>
               {displayedIcons.map((icon, index) => (
                 <Icones key={index} image={icon.image} title={icon.title} />
@@ -123,12 +118,7 @@ export const Home = () => {
                 onClick={handleNext}
                 disabled={currentIndex + itemsPerPage >= iconsData.length}
               >
-                <img
-                  className="set-image"
-                  src={setright}
-                  alt="seta direita"
-                  width={"25px"}
-                />
+                <img className="set-image" src={setright} alt="seta direita" />
               </Arrow>
             </div>
           </Box5>
