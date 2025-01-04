@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import { imageNew1, imageNew2, imageNew3 } from "../../assets";
 
 const images: { [key in "All" | "one" | "two" | "three"]: string[] } = {
-  All: [imageNew1, imageNew1, imageNew1],
+  All: [imageNew1, imageNew2, imageNew3],
   one: [imageNew1, imageNew1, imageNew1],
   two: [imageNew2, imageNew2, imageNew2],
   three: [imageNew3, imageNew3, imageNew3],
@@ -47,7 +47,7 @@ export default function ImageList() {
         }}
       >
         {images[value].map((image, index) => (
-          <div key={index} style={{ width: "150px", height: "150px" }}>
+          <div key={index} style={{ width: "250px", height: "350px" }}>
             <img
               src={image}
               alt={`Tab ${value} - ${index}`}
