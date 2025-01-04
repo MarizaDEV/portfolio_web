@@ -1,10 +1,12 @@
 import { imageNew1 } from "../../shared/assets";
 import { NavBar } from "../../shared/components";
+import ImageList from "../../shared/components/ImageList";
 import {
   BoxImagesNew,
   BoxProjetos,
   BoxTopProjects,
   Container,
+  ListImagesProjects,
 } from "./styles/styles";
 
 export const Projetos = () => {
@@ -31,8 +33,12 @@ export const Projetos = () => {
             />
           </BoxImagesNew>
         </BoxTopProjects>
+        <h1>PROJETOS</h1>
         <BoxProjetos>
-          <h1>PROJETOS</h1>
+          <ListImagesProjects>
+            {" "}
+            <ImageList />
+          </ListImagesProjects>
         </BoxProjetos>
       </Container>
     </>

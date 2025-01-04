@@ -72,17 +72,23 @@ export const BoxImagesNew = styled.div`
 `;
 
 export const BoxProjetos = styled.div`
-  background: #000000;
+  // background: #000000;
   width: 100%;
-  height: auto;
-  padding: 10px 0;
-  font-size: 18px;
-  font-weight: 500;
+  height: 600px;
+
   display: flex;
   justify-content: center;
   padding: 40px 0;
 
-  H1 {
+  h1 {
     color: #be267a;
+    font-size: 38px;
+    font-weight: 500;
   }
+`;
+
+export const ListImagesProjects = styled.div`
+  height: auto;
+  display: flex;
+  justify-content: center;
 `;
