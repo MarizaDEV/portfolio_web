@@ -33,10 +33,12 @@ export const Projetos = () => {
             />
           </BoxImagesNew>
         </BoxTopProjects>
-        <h1>PROJETOS</h1>
+
         <BoxProjetos>
+          <div>
+            <h1>Meus Projetos</h1>
+          </div>
           <ListImagesProjects>
-            {" "}
             <ImageList />
           </ListImagesProjects>
         </BoxProjetos>

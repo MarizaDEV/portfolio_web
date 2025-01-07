@@ -55,4 +55,8 @@ export const BoxImages = styled.div`
   }
 `;
 
-export const TabStyle = styled.div``;
+export const TabStyle = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
