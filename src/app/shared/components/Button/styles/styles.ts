@@ -16,7 +16,7 @@ const styles = {
     animation: "gradientAnimation 10s linear infinite",
   },
   primary: {
-    backgroundColor: "#007BFF",
+    backgroundColor: "#BE267A",
   },
   secondary: {
     background: "linear-gradient(45deg, #1E4468, #BE267A, #721347, #1E4468)",

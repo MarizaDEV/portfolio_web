@@ -60,3 +60,9 @@ export const TabStyle = styled.div`
   display: flex;
   justify-content: center;
 `;
+
+export const ButtonMais = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: end;
+`;
