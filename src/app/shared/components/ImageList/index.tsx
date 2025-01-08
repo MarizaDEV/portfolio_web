@@ -10,6 +10,7 @@ import {
   TabStyle,
 } from "./styles/styles";
 import { Button } from "../Button/Button";
+import { IoIosAddCircleOutline } from "react-icons/io";
 
 const images: {
   [key in "All" | "webdesign" | "posts" | "bradings"]: string[];
@@ -91,7 +92,9 @@ export default function ImageList() {
 
         {displayedImages < currentImages.length && (
           <ButtonMais>
-            <Button label="Mais" onClick={loadMoreImages} variant="primary" />
+            <Button label="Mais" onClick={loadMoreImages} variant="primary">
+              <IoIosAddCircleOutline />
+            </Button>
           </ButtonMais>
         )}
       </BoxContainer>

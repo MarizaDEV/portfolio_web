@@ -1,19 +1,30 @@
+import { ReactNode } from "react";
 import styles from "./styles/styles";
 
-interface ButtonProps {
+interface ButtonProps
+  extends Omit<
+    React.DetailedHTMLProps<
+      React.ButtonHTMLAttributes<HTMLButtonElement>,
+      HTMLButtonElement
+    >,
+    "ref"
+  > {
   label: string;
-  onClick: () => void;
+  children: ReactNode;
+  // onClick: () => void;
   disabled?: boolean;
   variant?: "primary" | "secondary" | "danger";
-  icon?: React.ReactNode;
+  icon?: ReactNode;
 }
 
 export const Button: React.FC<ButtonProps> = ({
   label,
+  children,
   onClick,
   disabled = false,
   variant = "primary",
   icon,
+  ...rest
 }) => {
   const buttonStyles = {
     ...styles.button,
@@ -23,9 +34,15 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   return (
-    <button onClick={onClick} disabled={disabled} style={buttonStyles}>
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      style={buttonStyles}
+      {...rest}
+    >
       {icon && <span style={styles.icon}>{icon}</span>}
-      {label}
+      {children}
+      <span>{label}</span>
     </button>
   );
 };
