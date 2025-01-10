@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { imageNew1, imageNew2, imageNew3 } from "../../assets";
@@ -10,7 +10,8 @@ import {
   TabStyle,
 } from "./styles/styles";
 import { Button } from "../Button/Button";
-import { IoIosAddCircleOutline } from "react-icons/io";
+import { IoMdAdd } from "react-icons/io";
+import { AiOutlineMinus } from "react-icons/ai";
 
 const images: {
   [key in "All" | "webdesign" | "posts" | "bradings"]: string[];
@@ -35,32 +36,52 @@ const images: {
     imageNew2,
     imageNew3,
   ],
-  webdesign: [imageNew1, imageNew1, imageNew1, imageNew1, imageNew2, imageNew3],
+  webdesign: [
+    imageNew1,
+    imageNew1,
+    imageNew1,
+    imageNew1,
+    imageNew2,
+    imageNew3,
+    imageNew3,
+  ],
   posts: [imageNew2, imageNew2, imageNew2, imageNew1, imageNew2, imageNew3],
   bradings: [imageNew3, imageNew3, imageNew3],
 };
 
 export default function ImageList() {
-  const [value, setValue] = React.useState<
+  const [value, setValue] = useState<
     "All" | "webdesign" | "posts" | "bradings"
-  >("webdesign");
-  const [displayedImages, setDisplayedImages] = React.useState(12);
-  const imagesPerLoad = 12;
+  >("All");
+  const [displayedImages, setDisplayedImages] = useState(8);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const imagesPerLoad = 8;
 
   const handleChange = (
     _event: React.SyntheticEvent,
     newValue: "All" | "webdesign" | "posts" | "bradings"
   ) => {
     setValue(newValue);
-    setDisplayedImages(12);
+    setDisplayedImages(8);
+    setIsExpanded(false);
   };
 
   const currentImages = images[value];
-  const imagesToShow = currentImages.slice(0, displayedImages);
+  const imagesToShow = isExpanded
+    ? currentImages
+    : currentImages.slice(0, displayedImages);
 
   const loadMoreImages = () => {
-    setDisplayedImages((prev) => prev + imagesPerLoad);
+    if (isExpanded) {
+      setDisplayedImages(8);
+      setIsExpanded(false);
+    } else {
+      setDisplayedImages((prev) => prev + imagesPerLoad);
+      setIsExpanded(true);
+    }
   };
+
+  const shouldShowLoadMoreButton = currentImages.length > 8;
 
   return (
     <>
@@ -90,10 +111,14 @@ export default function ImageList() {
           </BoxImages>
         </BoxContainerImages>
 
-        {displayedImages < currentImages.length && (
+        {shouldShowLoadMoreButton && (
           <ButtonMais>
-            <Button label="Mais" onClick={loadMoreImages} variant="primary">
-              <IoIosAddCircleOutline />
+            <Button
+              label={isExpanded ? "Diminuir" : "Mais"}
+              onClick={loadMoreImages}
+              variant="primary"
+            >
+              {isExpanded ? <AiOutlineMinus /> : <IoMdAdd />}
             </Button>
           </ButtonMais>
         )}

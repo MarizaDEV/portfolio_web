@@ -17,12 +17,6 @@ export const BoxContainerImages = styled.div`
     }
   }
 
-  @media (max-width: 1024px) and (min-width: 768px) {
-    .boximages {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
   @media (max-width: 768px) {
     .boximages {
       grid-template-columns: repeat(2, 1fr);
