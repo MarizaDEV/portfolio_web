@@ -93,6 +93,12 @@ export default function ImageList() {
             textColor="secondary"
             indicatorColor="secondary"
             aria-label="image tabs"
+            sx={{
+              "& .MuiTab-root": {
+                fontSize: { xs: "9px", sm: "14px" },
+                minWidth: "50px",
+              },
+            }}
           >
             <Tab value="All" label="All" />
             <Tab value="webdesign" label="Web Design" />

@@ -92,4 +92,5 @@ export const BoxProjetos = styled.div`
 export const ListImagesProjects = styled.div`
   display: flex;
   justify-content: end;
+  width: 100%;
 `;

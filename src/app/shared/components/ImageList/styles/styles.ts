@@ -11,22 +11,21 @@ export const BoxContainerImages = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 550px) {
     .boximages {
       grid-template-columns: repeat(4, 1fr);
     }
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 321px) and (max-width: 549px) {
     .boximages {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 320px) {
     .boximages {
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 0;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;
@@ -44,7 +43,7 @@ export const BoxImages = styled.div`
     border-radius: 8px;
 
     @media (max-width: 480px) {
-      width: 150px;
+      width: 100%;
     }
   }
 `;
