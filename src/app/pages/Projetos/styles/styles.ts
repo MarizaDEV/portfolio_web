@@ -39,6 +39,16 @@ export const BoxImagesNew = styled.div`
     height: 380px;
   }
 
+  @media (min-width: 651px) and (max-width: 950px) {
+    img {
+      width: 200px;
+      height: 220px;
+    }
+    .Image-2 {
+      width: 180px;
+      height: 260px;
+    }
+  }
   @media (min-width: 510px) and (max-width: 650px) {
     img {
       width: 150px;
