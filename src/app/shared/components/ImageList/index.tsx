@@ -97,6 +97,7 @@ export default function ImageList() {
               "& .MuiTab-root": {
                 fontSize: { xs: "9px", sm: "14px" },
                 minWidth: "50px",
+                color: "#ffffff",
               },
             }}
           >

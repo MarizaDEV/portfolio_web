@@ -40,9 +40,7 @@ export const Footer = () => {
           <p>Páginas Webs</p>
         </div>
       </BoxTop>
-      <LineStyle>
-        <Line></Line>
-      </LineStyle>
+
       <BoxContacts>
         {iconsContacts.map((icon, index) => (
           <IconFooter key={index} image={icon.image} />

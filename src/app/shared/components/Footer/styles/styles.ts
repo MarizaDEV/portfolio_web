@@ -25,14 +25,6 @@ export const LineStyle = styled.div`
   margin: 0 40px;
 `;
 
-export const Line = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  border-bottom: 2px solid #ffffff;
-`;
-
 export const BoxContacts = styled.div`
   display: flex;
   justify-content: center;

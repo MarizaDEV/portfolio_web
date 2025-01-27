@@ -82,7 +82,11 @@ export const BoxImagesNew = styled.div`
 `;
 
 export const BoxProjetos = styled.div`
-  //background: #000000;
+  background: linear-gradient(
+    180deg,
+    rgba(4, 4, 4, 1) 0%,
+    rgba(27, 48, 80, 1) 85%
+  );
   width: 100%;
   height: auto;
   display: flex;
