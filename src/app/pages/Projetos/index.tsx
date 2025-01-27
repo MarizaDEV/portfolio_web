@@ -1,5 +1,5 @@
 import { imageNew1 } from "../../shared/assets";
-import { NavBar } from "../../shared/components";
+import { Footer, NavBar } from "../../shared/components";
 import ImageList from "../../shared/components/ImageList";
 import {
   BoxImagesNew,
@@ -42,6 +42,8 @@ export const Projetos = () => {
             <ImageList />
           </ListImagesProjects>
         </BoxProjetos>
+
+        <Footer />
       </Container>
     </>
   );

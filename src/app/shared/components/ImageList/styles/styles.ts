@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const BoxContainer = styled.div`
   width: 100%;
-  height: auto;
   padding: 0 16px;
 `;
 

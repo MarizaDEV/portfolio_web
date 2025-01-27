@@ -89,8 +89,9 @@ export const BoxProjetos = styled.div`
   );
   width: 100%;
   height: auto;
+  min-height: 800px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 40px 0;
   flex-direction: column;
@@ -105,6 +106,5 @@ export const BoxProjetos = styled.div`
 
 export const ListImagesProjects = styled.div`
   display: flex;
-  justify-content: end;
   width: 100%;
 `;

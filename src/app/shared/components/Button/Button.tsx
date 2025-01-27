@@ -10,7 +10,7 @@ interface ButtonProps
     "ref"
   > {
   label: string;
-  children: ReactNode;
+  children?: ReactNode;
   // onClick: () => void;
   disabled?: boolean;
   variant?: "primary" | "secondary" | "danger";
