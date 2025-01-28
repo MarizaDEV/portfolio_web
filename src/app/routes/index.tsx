@@ -12,7 +12,7 @@ export const Routes = () => {
       <Switch>
         <Route path="/home" element={<Home />} />
         <Route path="/projetos" element={<Projetos />} />
-        <Route path="/pagwebs" element={<PagWebs />} />
+        <Route path="/pag-webs" element={<PagWebs />} />
 
         <Route path="/*" element={<Navigate to="/home" />} />
       </Switch>

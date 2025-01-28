@@ -3,44 +3,45 @@ import styled from "styled-components";
 export const MenuStyled = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   width: 100%;
+  padding-bottom: 30px;
 
   ul {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 600px;
+    gap: 20px;
     list-style-type: none;
-    margin: 15px;
+    margin: 25px;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 40px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   }
 
   li {
     float: left;
-    border-radius: 20px;
     overflow: hidden;
+
+    :hover {
+      background-color: var(--pink-theme);
+      border-radius: 2px;
+    }
   }
 
-  li img {
-    width: 48px;
-    height: 50px;
+  li a.active {
+    background-color: var(--pink-theme);
+    border-radius: 2px;
   }
 
   li a {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 3px 10px;
     text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
   }
 
   li a:hover {
